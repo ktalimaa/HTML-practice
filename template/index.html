@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>SDA school system</title>
+    <link>  <!-- css link is always inside the head -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
 </head>
 <body>
 <div id="main-page">
@@ -12,12 +15,18 @@
         </div>
     </header>
 
+    <!-- css class attribute - if you assign set of styles to variable, and you can use this variable anywhere in this html page -->
+    <!-- id is the easiest way to select tag -->
+    <!-- margin: -50% 5% 0 75%; goes to top right bottom left -->
+    <!-- hide-me - hides code in html -->
+    <!-- before html, then write css, but when writing class, it comes first in css and then add it as method to the code -->
+
     <div id="greeting">
         <h1>Hello, User!</h1>
         <p>Welcome to SDA system!<br/>Here You can find more <span style="color: red">schedules and lessons</span> of
             SDA.</p>  <!-- span only affects things between it -->
         <p><i>Today is a great day!</i><br/><b>It's nice to meet You again!</b></p>
-        <div id="image-block">
+        <div id="image-block" class="hide-me">
             <img src="../assets/images/java-code.jpg" alt="Java Code Picture" height="450" width="800"/>
             <!-- all division can be nested -->
             <!-- adding hyperlink, href -->
@@ -27,8 +36,8 @@
             <video src="/video.mp4" width="400" height="200"></video>
         </div>
     </div>
-    <div id="couse-list">
-        <!-- ul meand unordered list, it means list with bullets, not numbers.  ol - ordered list is with numbers. li = is list item. List can also be mixed ul+ol -->
+    <div id="course-list">
+        <!-- ul means unordered list, it means list with bullets, not numbers.  ol - ordered list is with numbers. li = is list item. List can also be mixed ul+ol -->
         <h3>Courses:</h3>
         <ul>
             <li>Java
@@ -47,7 +56,7 @@
         <ol>
             <li>Java
                 <ul>
-                    <li>Spring</li>
+                    <li class="bold-orange underline-me">Spring</li>
                     <li>Vaadin</li>
                     <li>Apache</li>
                 </ul>
@@ -63,7 +72,7 @@
 
     <section id="Hot-news">
         <header>
-            <h3>Hot news</h3>
+            <h3 class="bold-orange">Hot news</h3>
         </header>
         <!-- inside the section any number of divs-->
         <div id="left-block">

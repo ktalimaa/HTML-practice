@@ -7,7 +7,6 @@
 <body>
 <h1>Subscription Form</h1>
 <h2><i>I would like to subscribe to</i></h2>
-
 <table border="1">
     <thead>
     <tr>
@@ -43,7 +42,6 @@
     </tbody>
 </table>
 <br/><br/>
-
 <label for="Mr."></label>
 <input type="radio" id="Mr." name="gender"/> Mr.
 <input type="radio" id="Mrs." name="gender"/> Mrs.
@@ -96,13 +94,68 @@
 <input name="fax" id="fax" type="number"/>
 <label for="email">Email: </label>
 <input name="email" id="email" type="email"/>
-
 <br/><br/>
 <big>Billing address: (If different from above)</big>
-<big><p>Company name:</p></big>
-
-
-
-
+<br/><br/>
+<label for="company-name-billing">Company name:</label>
+<input name="company-name-billing" id="company-name-billing" type="text"/>
+<br/><br/>
+<label for="address-billing">Address:</label>
+<textarea id="address-billing" name="address-billing" rows="2" cols="50"/></textarea>
+<br/><br/>
+<label for="telephone-billing">Tel: </label>
+<input name="telephone-billing" id="telephone-billing" type="number" min="0" max="8"/>
+<label for="fax-billing">Fax: </label>
+<input name="fax-billing" id="fax-billing" type="number"/>
+<br/><br/>
+<label for="contact-person">Contact person:</label>
+<input name="contact-person" id="contact-person" type="text"/>
+<br/><br/>
+<p>I would like to pay by:</p>
+<label for="bank-transfer"></label>
+<input type="checkbox" id="bank-transfer" name="payment"/> Bank transfer direct to "Bangkok Post Public Co., Ltd."
+<br>
+<p>Bangkok Bank / Sunthorn Kosa branch; A/C 218-3-00884-2; Date...........</p>
+<p>Kasikorn Bank / North Sathorn branch; A/C 038-1-07730-6; Date..........</p>
+<p>Siam Commerical Bank / Wireless Road; A/C 049-3-10616-4; Date..........</p>
+<br>
+<input type="checkbox" id="Credit card" name="payment"/> Credit card
+<label for="Mastercard"></label>
+<input type="radio" id="Mastercard" name="payment-type" Mastercard>
+<img src="../assets/images/master-card.jpg" alt="Master Card" height="20" width="40">
+<input type="radio" id="Visa" name="payment-type"/> Visa
+<img src="../assets/images/visa.jpg" alt="Visa" height="20" width="40">
+<input type="radio" id="American Express" name="payment-type"/> American Express
+<img src="../assets/images/amreican-express.jpg" alt="American Express" height="20" width="40">
+<br>
+<p>Card number:</p>
+<table border="1">
+    <thead>
+    <tr>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+        <th>&nbsp</th>
+    </tr>
+    </thead>
+</table>
+<br/><br/>
+<label for="authorized-signature">Authorized signature:</label>
+<input name="authorized-signature" id="authorized-signature" type="text"/>
+<label for="expire-date">Expire date:</label>
+<input type="date" id="expire-date" name="expire-date">
 </body>
 </html>
