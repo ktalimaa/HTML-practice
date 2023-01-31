@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SDA System-User registration</title>
+</head>
+<body>
+<div id="register">
+    <h3>Signup</h3>
+    <p>Enter the details below:</p>
+    <form id="sign-up" name="signup">
+        <label for="first-name">First name: </label>
+        <input name="first-name" id="first-name" type="text"/>       <!-- text will get input from the user. / closes it -->
+        <br/><br/>      <!-- add break after each field, so it will be on different rows -->
+        <label for="last-name">Last name:</label>
+        <input name="last-name" id="last-name" type="text"/>
+        <br/><br/>
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="email">
+        <br/><br/>
+        <label for="password">Password:</label>     <!-- for should always have the same value what id is -->
+        <input name="password" id="password" type="password">
+        <br/><br/> <!-- radio button -->
+        <label for="male">Gender:</label>
+        <input type="radio" id="male" name="gender" /> Male      <!-- cannot give label to each radio button, it is only one, the first one and also should be two of them -->
+        <input type="radio" id="female" name="gender" /> Female    <!-- radio buttons name always is same, only id is different -->
+        <br/><br/> <!-- checkbox -->
+        <label for="mathematics">Favorite subjects:</label> <!-- possible to select multiple choices -->
+        <input type="checkbox" id="mathematics" name="favorite-subjects" /> Mathematics
+        <input type="checkbox" id="science" name="favorite-subjects" /> Science
+        <input type="checkbox" id="software" name="favorite-subjects" /> Software
+        <br/><br/> <!-- date -->
+        <label for="join-date">Join date:</label>
+        <input type="date" id="join-date" name="join-date" />
+        <br/><br/> <!-- age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" /> <!-- 0 because age cannot go to minus, or whatever min age -->
+    </form>
+</div>
+</body>
+</html>
