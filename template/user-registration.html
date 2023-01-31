@@ -8,33 +8,48 @@
 <div id="register">
     <h3>Signup</h3>
     <p>Enter the details below:</p>
-    <form id="sign-up" name="signup">
+    <form id="sign-up" name="signup" method="post" action="index.html"> <!-- method can be get or post. post will send data. -->
         <label for="first-name">First name: </label>
-        <input name="first-name" id="first-name" type="text"/>       <!-- text will get input from the user. / closes it -->
-        <br/><br/>      <!-- add break after each field, so it will be on different rows -->
+        <input name="first-name" id="first-name" type="text" value="Kristel" readonly minlength="3" maxlength="25"/>         <!-- readonly - value can be read, but not changed. minmax- the length of the input value. text will get input from the user. / closes it -->
+        <br/><br/>      <!-- add break fter each field, so it will be on different rows -->
         <label for="last-name">Last name:</label>
-        <input name="last-name" id="last-name" type="text"/>
+        <input name="last-name" id="last-name" type="text" value="Talimaa"/> <!-- attribute value is for prefilled labels -->
         <br/><br/>
         <label for="email">Email:</label>
-        <input name="email" id="email" type="email">
+        <input name="email" id="email" type="email" required placeholder="abc@gmail.com">    <!-- required tag, the field must be filled by user to submit. Placeholder is like example for typing. -->
         <br/><br/>
         <label for="password">Password:</label>     <!-- for should always have the same value what id is -->
         <input name="password" id="password" type="password">
         <br/><br/> <!-- radio button -->
         <label for="male">Gender:</label>
-        <input type="radio" id="male" name="gender" /> Male      <!-- cannot give label to each radio button, it is only one, the first one and also should be two of them -->
-        <input type="radio" id="female" name="gender" /> Female    <!-- radio buttons name always is same, only id is different -->
+        <input type="radio" id="male" name="gender"/> Male       <!-- cannot give label to each radio button, it is only one, the first one and also should be two of them -->
+        <input type="radio" id="female" name="gender" checked/> Female         <!-- radio buttons name always is same, only id is different -->
         <br/><br/> <!-- checkbox -->
         <label for="mathematics">Favorite subjects:</label> <!-- possible to select multiple choices -->
-        <input type="checkbox" id="mathematics" name="favorite-subjects" /> Mathematics
-        <input type="checkbox" id="science" name="favorite-subjects" /> Science
-        <input type="checkbox" id="software" name="favorite-subjects" /> Software
+        <input type="checkbox" id="mathematics" name="favorite-subjects"/> Mathematics
+        <input type="checkbox" id="science" name="favorite-subjects" disabled/> Science         <!-- disable doesnt let user to choose this value -->
+        <input type="checkbox" id="software" name="favorite-subjects" checked/> Software         <!-- checked tag puts this value as checked already -->
         <br/><br/> <!-- date -->
         <label for="join-date">Join date:</label>
-        <input type="date" id="join-date" name="join-date" />
+        <input type="date" id="join-date" name="join-date"/>
         <br/><br/> <!-- age -->
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="0" /> <!-- 0 because age cannot go to minus, or whatever min age -->
+        <input type="number" id="age" name="age" min="0" max="99"/>         <!-- 0 because age cannot go to minus, or whatever min age -->
+        <br/><br/> <!-- select -->
+        <label for="favorite-food">Favorite food:</label>
+        <select id="favorite-food" name="favorite-food">
+            <option value="pizza">Pizza</option>
+            <option value="sandwich" disabled>Sandwich</option> <!-- disable doesnt let user to choose this value -->
+            <option value="blood" selected>Blood sausage</option>   <!-- selected tag puts this value as default -->
+        </select>
+        <br/><br/> <!-- textarea -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="8" cols="50"></textarea>    <!-- rows/cols - size of the textarea -->
+        <br/><br/> <!-- hidden type -->
+        <input type="hidden" id="active" name="active" value="yes"/>     <!-- fields/values what backend needs, we can use them as hidden, so front end doesn't display it. its hidden somewhere in the form. -->
+        <br/><br/> <!-- button adding: <button></button> or input way -->
+        <input type="submit" value="Signup">
+        <input type="reset" value="Clear form">  <!-- Clears whole form. Reset won't affect preset values. -->
     </form>
 </div>
 </body>
