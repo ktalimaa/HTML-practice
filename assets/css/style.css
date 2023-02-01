@@ -59,4 +59,9 @@ p, h1, section {
     background: hsl(58, 72%, 55%);
 }
 
+/* Position */
+#Hot-news {
+    position: sticky;
+}
+
 
