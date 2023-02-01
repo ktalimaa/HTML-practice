@@ -1,0 +1,38 @@
+/* Adding background color */
+body {
+    background-color: #B5F1E3;
+}
+
+/* Changing font of h1 */
+
+h1 {
+    font-family: "Comic Sans MS";
+}
+
+/* Adding underline to h2 */
+h2 {
+    text-decoration: underline;
+}
+
+/* Using text-align */
+h2 {
+    text-align: right;
+}
+
+img {
+    float: right;
+}
+
+/* Adding borders to the paragraphs on the page */
+p {
+    border: 2px solid black;
+}
+
+/* Using margin and padding */
+p {
+    margin-top: 50px;
+}
+
+h1 {
+    padding: 10px 10px 10px 15px;
+}
