@@ -1,10 +1,13 @@
 h1 {
     color: blue;
+    /* transform: rotate(90deg); */
 }
 
 /* Id selector  */
 #course-list {
     margin: 0 5% 0 75%;
+    box-shadow: gray;
+    opacity: revert;
 }
 
 /* Defined class selectors  */
@@ -38,6 +41,7 @@ ul li {
 /* Child selector */
 #greeting > p {
     border: 4px dashed green;
+    border-radius: inherit;
     padding-left: 50px; /* padding is inside, margin is outline */
 }
 
@@ -63,5 +67,10 @@ p, h1, section {
 #Hot-news {
     position: sticky;
 }
+
+/* body {
+    font-face: new font here to install ;
+}
+ */
 
 

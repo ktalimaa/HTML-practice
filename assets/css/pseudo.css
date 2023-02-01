@@ -16,7 +16,24 @@ a:link {
     font-size: smaller;
 }
 
-a:visited{
+a:visited {
     color: royalblue;
     font-family: "Comic Sans MS";
+}
+
+/* media properties are usually made into new css file. used for applying different styles to different screen sizes. */
+/* each device you need to set different properties. this example is for mobile */
+@media screen and (max-width: 480px) {
+    [name=password]:hover {
+        background-color: blue;
+        margin-bottom: 60px;
+    }
+}
+
+/* each device you need to set different properties. this example is for tablet */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    [name=password]:hover {
+        background-color: yellow;
+        margin-top: 60px;
+    }
 }
