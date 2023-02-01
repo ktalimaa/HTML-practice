@@ -2,21 +2,61 @@ h1 {
     color: blue;
 }
 
+/* Id selector  */
 #course-list {
     margin: 0 5% 0 75%;
 }
 
-.hide-me{
+/* Defined class selectors  */
+.hide-me {
     display: none;
 }
 
-.bold-orange{
+.bold-orange {
     color: orange;
     font-weight: bold;
 }
 
-.underline-me{
+.underline-me {
     text-decoration: underline;
     text-decoration-thickness: 5px;
     text-decoration-color: red;
 }
+
+/* Descendant selector */
+#greeting p {
+    margin-left: 30px;
+}
+
+/* Mixing up tag and id */
+ul li {
+    text-decoration: line-through;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+}
+
+/* Child selector */
+#greeting > p {
+    border: 4px dashed green;
+    padding-left: 50px; /* padding is inside, margin is outline */
+}
+
+/* Next element selector */
+h3 + ol {
+    text-decoration-line: underline;
+    padding: 0 10px 0 5px;
+}
+
+/* Combined selector */
+p, h1, section {
+    background: aquamarine;
+}
+
+/* Attribute selector [attribute name = value] */
+[name=email] {
+    /* background: #BE3EDD; /* HEX value of the color */
+    /*background: rgb(62, 221, 158); */
+    background: hsl(58, 72%, 55%);
+}
+
+
