@@ -16,7 +16,7 @@
         <input name="first-name" id="first-name" type="text" value="Kristel" readonly minlength="3" maxlength="25"/>         <!-- readonly - value can be read, but not changed. minmax- the length of the input value. text will get input from the user. / closes it -->
         <br/><br/>      <!-- add break fter each field, so it will be on different rows -->
         <label for="last-name">Last name:</label>
-        <input name="last-name" id="last-name" type="text" value="Talimaa"/> <!-- attribute value is for prefilled labels -->
+        <input name="last-name" id="last-name" type="text" value="Talimaa" onkeyup="showAlert()" /> <!-- attribute value is for prefilled labels -->
         <br/><br/>
         <label for="email">Email:</label>
         <input name="email" id="email" type="email" required placeholder="abc@gmail.com">    <!-- required tag, the field must be filled by user to submit. Placeholder is like example for typing. -->
@@ -57,5 +57,6 @@
 </div>
 <a href="https://facebook.com">Facebook</a>
 <a href="https://telegraph.co.uk">Telegraph</a>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

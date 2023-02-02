@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Kristel Talimaa">      <!-- who owns code -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- making website to suit different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- making website to suit different devices -->
     <title>SDA school system</title>
     <link>  <!-- css link is always inside the head -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
@@ -11,11 +12,17 @@
 </head>
 <body>
 <div id="main-page">
-    <header>        <!-- stays on top with header. When two words in id, separate with - sign. -->
-        <div id="menu">       <!-- whole body is one divison. id is name for the taf -->
-            <a href="contact.html">Contact us</a>
+    <header>
+        <div id="menu"><a href="#" onclick="function showMeAlert() {
+    }
+    showMeAlert()">Contact us</a>
         </div>
     </header>
+
+    <!-- stays on top with header. When two words in id, separate with - sign. -->
+    <!-- whole body is one division. id is name for the taf -->
+    <!-- <a href="contact.html">Contact us</a> -->
+
 
     <!-- css class attribute - if you assign set of styles to variable, and you can use this variable anywhere in this html page -->
     <!-- id is the easiest way to select tag -->
@@ -25,7 +32,8 @@
 
     <div id="greeting">
         <h1>Hello, User!</h1>
-        <p>Welcome to SDA system!<br/>Here You can find more <span style="color: red">schedules and lessons</span> of SDA.</p>  <!-- span only affects things between it -->
+        <p>Welcome to SDA system!<br/>Here You can find more <span style="color: red">schedules and lessons</span> of
+            SDA.</p>  <!-- span only affects things between it -->
         <p><i>Today is a great day!</i><br/><b>It's nice to meet You again!</b></p>
 
         <div id="image-block" class="hide-me">
@@ -34,8 +42,8 @@
             <!-- adding hyperlink, href -->
             <!-- can add link manually also. _blank it will open new tab. _parent opens in same tab as usual -->
             <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            <audio src="/voice.mp3"></audio>
-            <video src="/video.mp4" width="400" height="200"></video>
+            <!-- <audio src="/voice.mp3"></audio> -->
+            <!-- <video src="/video.mp4" width="400" height="200"></video> -->
         </div>
 
     </div>
@@ -90,6 +98,6 @@
     </section>
 
 </div>
-
+<script src="../assets/js/script.js"></script>
 </body>
 </html>
